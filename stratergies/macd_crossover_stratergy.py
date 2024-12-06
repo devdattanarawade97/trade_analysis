@@ -6,7 +6,7 @@ import numpy as np
 # Fetch historical Bitcoin data
 def fetch_bitcoin_data():
     # Get the last 1 year of data for Bitcoin
-    data = yf.download('BTC-USD', period="1y", interval="1d")
+    data = yf.download('AMZN', period="1y", interval="1d")
     return data
 
 # Calculate MACD and Signal Line

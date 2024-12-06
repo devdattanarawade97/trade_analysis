@@ -2,8 +2,8 @@ import yfinance as yf
 
 # Define the stock ticker and time range
 ticker = "AMZN"
-start_date = "2024-09-01"  # Replace with desired start date
-end_date = "2024-10-26"    # Replace with desired end date
+start_date = "2024-01-01"  # Replace with desired start date
+end_date = "2024-11-30"    # Replace with desired end date
 
 # Fetch historical data
 data = yf.download(ticker, start=start_date, end=end_date)
