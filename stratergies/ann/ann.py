@@ -24,6 +24,7 @@ for i in range(len(scaled_prices) - sequence_length):
     y.append(scaled_prices[i + sequence_length])
 X, y = np.array(X), np.array(y)
 
+
 # Step 3: Split the data into training and testing sets
 split = int(len(X) * 0.8)
 X_train, X_test = X[:split], X[split:]
