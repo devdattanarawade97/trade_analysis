@@ -11,6 +11,8 @@ import datetime
 symbol = "BTC-USD"
 data = yf.download(symbol, start="2010-01-01")
 
+
+
 # Prepare the data
 prices = data['Close'].values.reshape(-1, 1)
 scaler = MinMaxScaler(feature_range=(0, 1))
